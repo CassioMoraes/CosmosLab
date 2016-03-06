@@ -28,7 +28,7 @@ html, body, .container-table {
 #home-logo {
     max-width: 100%;
     height: auto;
-    width: auto\9;
+    width: auto\9;  
 }
 
 .center-block {
@@ -39,14 +39,9 @@ html, body, .container-table {
 }
 
 .circle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;    
-    background: -webkit-radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4), rgba(255,255,255,0)); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4), rgba(255,255,255,0)); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.4), rgba(255,255,255,0)); /* Standard syntax */
+    position: absolute;        
+    background: -webkit-radial-gradient(rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(     rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(   rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(        rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Standard syntax */
 }
