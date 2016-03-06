@@ -3,13 +3,15 @@ var tickTimer = 20;
 setInterval(onTimerTick, tickTimer);
 
 function StartSparkling() {
-    var sparkleMaxSize = 10;
+    
+    var sparkleMaxSize = 10;    
     var sparkleMinSize = 5;
+    var sparkleSizeTolerance = 2;
     
     for (i = 0; i < 100; i++) {
         
-        var x = (Math.random() * ($(document).width() -  sparkleMaxSize)).toFixed();
-        var y = (Math.random() * ($(document).height() - sparkleMaxSize)).toFixed();
+        var x = (Math.random() * ($(document).width() -  (sparkleMaxSize + sparkleSizeTolerance))).toFixed();
+        var y = (Math.random() * ($(document).height() - (sparkleMaxSize + sparkleSizeTolerance))).toFixed();
         var randonSize = Math.floor(Math.random() * sparkleMaxSize) + sparkleMinSize;
 
         var $circle = $("<div>", { id:"circle" + i, class: "circle pulsate"});               

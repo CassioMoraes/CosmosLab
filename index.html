@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
-    <script src="js\sparkle.js"></script>
+    <script src="js\overlay.js"></script>
     <script src="js\sparkle-spawn.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -22,10 +22,31 @@
 
 </head>
 
-<body onload="StartSparkling()">    
+<body onload="StartSparkling()">
+
+    <div id="options" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-right">
+                <a class="navbar-brand" href="#" onclick="toggleNav()">
+                    <img id="menu" src="img\Icon_OpenMenu.png">
+                </a>
+            </div>
+    </nav>
+
     <div class="container container-table">
         <img id="bg" src="img\Home_Background.jpg">
         <div class="sparkles"></div>
+
         <div class="row vertical-center-row">
             <div class="col-sm-12">
                 <div class="center-block">
