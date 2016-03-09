@@ -32,10 +32,9 @@ html, body, .container-table {
     z-index: 10;
 }
 
-#home-logo {
+.home-logo {
     max-width: 100%;
     height: auto;
-    width: auto\9;  
 }
 
 .center-block {
@@ -137,7 +136,11 @@ html, body, .container-table {
 }
 
 /*IE Hack*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {    
+    .home-logo {
+        width: 100%;
+    }
+    
     .overlay a {
         position: absolute;
         top: 50%;
