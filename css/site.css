@@ -53,18 +53,18 @@ html, body, .container-table {
     background: radial-gradient(        rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Standard syntax */
 }
 
+/*Manter navbar na direita*/
+.navbar-right {float: right !important;}
+
 /* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+.overlay {    
     height: 0%;
-    width: 100%;
+    width: 100%;    
     position: fixed; /* Stay in place */
-    overflow: hidden;
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    top: 0;    
+    overflow: hidden;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -72,33 +72,67 @@ html, body, .container-table {
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
+    top: 0; /* 25% from the top */
+    height: 100%;
+    width: 16.66%; /* 100% width */
     text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.panel-1{
+    float: left;
+    background-color: rgb(33,1,33);
+    background-color: rgba(33,1,33,0.9);
+}
+
+.panel-2{
+    float: left;
+    background-color: rgb(39,3,40);
+    background-color: rgba(39,3,40,0.9);
+}
+
+.panel-3{    
+    float: left;
+    background-color: rgb(49,8,49);
+    background-color: rgba(49,8,49,0.9);
+}
+
+.panel-4{
+    float: left;
+    background-color: rgb(60,13,60);
+    background-color: rgba(60,13,60,0.9);
+}
+
+.panel-5{
+    float: left;
+    background-color: rgb(74,19,75);
+    background-color: rgba(74,19,75,0.9);
+}
+
+.panel-6{
+    float: left;
+    background-color: rgb(91,25,91);
+    background-color: rgba(91,25,91,0.9);
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
+    color: rgb(255,255,0);
+    display: inline-block;
+    line-height: normal;
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
