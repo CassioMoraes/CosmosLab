@@ -116,11 +116,13 @@ html, body, .container-table {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    position: relative;
+    position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);  
+    -moz-transform:translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -130,18 +132,7 @@ html, body, .container-table {
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
-/* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .closebtn {
-        font-size: 40px !important;
-        top: 15px;
-        right: 35px;
-    }
 }
 /*---------------------------------------------------------------------------------------------------------------------------------*/
