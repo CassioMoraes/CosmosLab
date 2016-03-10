@@ -33,7 +33,7 @@ function StartSparkling() {
 function onTimerTick() {
     var randomSplarkle = Math.floor(Math.random() * 100) + 1;
     
-    $("#circle" + randomSplarkle).animate({ opacity: 0.2 }, 1200, 'linear')    
-            .animate({ opacity: 1 }, 1200, 'linear')
-            .animate({ opacity: 1 }, 400, 'linear');    
+    $("#circle" + randomSplarkle).animate({ opacity: 0.2 }, 1000, 'linear')    
+            .animate({ opacity: 1 }, 1000, 'linear')
+            .animate({ opacity: 1 }, 300, 'linear');    
 }

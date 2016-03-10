@@ -1,3 +1,8 @@
+@font-face{
+    font-family: "Modern-M";
+    src: url('../fonts/modern M.ttf');
+}
+
 html, body, .container-table {    
     height: 100%;
     background: #000000;
@@ -115,6 +120,7 @@ html, body, .container-table {
 
 /* The navigation links inside the overlay */
 .overlay a {
+    font-family: Modern-M;
     position: relative;
     top: 50%;
     transform: translateY(-50%);  
