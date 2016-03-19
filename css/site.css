@@ -1,7 +1,16 @@
 @font-face{
     font-family: "Modern-M";
-    src: url('../fonts/modern M.ttf');
+    src: url('../fonts/modern M.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/modern M.ttf')  format('truetype');
 }
+
+@font-face {
+    font-family: 'MyFontFamily';
+    src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('myfont-webfont.woff') format('woff'), 
+         url('myfont-webfont.ttf')  format('truetype'),
+         url('myfont-webfont.svg#svgFontName') format('svg');
+    }
 
 html, body, .container-table {    
     height: 100%;
@@ -61,12 +70,13 @@ html, body, .container-table {
 
 /* The Overlay (background) */
 .overlay {    
-    height: 0%;
-    width: 100%;    
+    height: 100%;
+    width: 100%;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 0;    
+    top: 0;
+    opacity: 0;
     overflow: hidden;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
@@ -187,7 +197,6 @@ html, body, .container-table {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 675px;
 }
 
 .portfolio-box .portfolio-box-caption {    
@@ -198,8 +207,8 @@ html, body, .container-table {
     height: 100%;
     text-align: center;
     color: #ff0;
-    opacity: 0;
-    background:rgba(91,25,91,0.6);
+    opacity: 1;
+    background:rgba(91,25,91,0);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -223,7 +232,7 @@ html, body, .container-table {
 }
 
 .portfolio-box:hover .portfolio-box-caption {
-    opacity: 1;
+    background:rgba(91,25,91,0.6);
 }
 
 @media(min-width:768px) {

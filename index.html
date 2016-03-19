@@ -25,8 +25,8 @@
 <body onload="StartSparkling()">
 
     <div id="options" class="overlay">
-        <div class="overlay-content panel-1">
-            <a href="#">
+        <div class="page-scroll overlay-content panel-1">
+            <a href="#home" onclick="toggleNav()">
                 H</br>
                 O</br>
                 M</br>
@@ -34,7 +34,7 @@
                 </a>
         </div>
         <div class="overlay-content panel-2">
-            <a href="#">
+            <a href="#about" onclick="toggleNav()">
                 S</br>
                 O</br>
                 B</br>
@@ -43,7 +43,7 @@
                 </a>
         </div>
         <div class="overlay-content panel-3">
-            <a href="#">
+            <a href="#products" onclick="toggleNav()">
                 P</br>
                 R</br>
                 O</br>
@@ -55,7 +55,7 @@
                 </a>
         </div>
         <div class="overlay-content panel-4">
-            <a href="#">
+            <a href="#cases" onclick="toggleNav()">
                 C<br>
                 A<br>
                 S<br>
@@ -64,7 +64,7 @@
                 </a>
         </div>
         <div class="overlay-content panel-5">
-            <a href="#">
+            <a href="#blog" onclick="toggleNav()">
                 B<br>
                 L<br>
                 O<br>
@@ -72,7 +72,7 @@
                 </a>
         </div>
         <div class="overlay-content panel-6">
-            <a href="#">
+            <a href="#contato" onclick="toggleNav()">
                 C<br>
                 O<br>
                 N<br>
@@ -87,28 +87,30 @@
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header navbar-right">
-                <a class="navbar-brand" href="#" onclick="toggleNav()">
+                <div class="navbar-brand" onclick="toggleNav()">
                     <img id="menu" src="img\Icon_OpenMenu.png">
-                </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container container-table">
-        <img id="bg" src="img\Home_Background.jpg">
+    <section id="home">
+        <div class="container container-table">
+            <img id="bg" src="img\Home_Background.jpg">
 
-        <div class="sparkles"></div>
+            <div class="sparkles"></div>
 
-        <div class="row vertical-center-row">
-            <div class="col-sm-12">
-                <div class="center-block">
-                    <img class="home-logo" src="img\CosmosLab_Logo.png">
+            <div class="row vertical-center-row">
+                <div class="col-sm-12">
+                    <div class="center-block">
+                        <img class="home-logo" src="img\CosmosLab_Logo.png">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="products">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-sm-6">
