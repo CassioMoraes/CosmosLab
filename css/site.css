@@ -243,37 +243,55 @@ html, body, .container-table {
 
 .contact-info{
     display: inline-block;
-    vertical-align: middle; 
     text-align: left;
     font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);   
 }
 
 .contact-form {
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 5%;
-    float: left;
-    text-align: left;
-    font-size: 30px;
+    font-size: 30px;        
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
 }
 
 .contact-form input[type="text"]{
-    width: 120%;        
+    width: 100%;        
     margin-bottom: 3px;    
     background-color:rgba(49,8,49,0.4);
     color: white;
-    border: 0px;    
+    border: none;
 }
 
 .contact-form input[type="submit"]{
-    width: 120%;
+    width: 100%;
     text-align: right;     
     margin-bottom: 3px;    
     background-color: transparent;
     color: #ff0;
-    border: 0px;
+    border: none;
+    outline:none;
 }
 
-.contact-message{    
+.contact-message{ 
+    margin-bottom: 3px;    
+    background-color:rgba(49,8,49,0.4);
+    color: rgb(169,169,169);
+    border: none;
     height: 300px;
+}
+
+.validation-info{
+    margin: 0;
+    font-size: 20px;
+    color: red;
 }
