@@ -211,29 +211,31 @@
                     <div class="portfolio-box">
                         <img src="img/contact-background.jpg" class="img-responsive" alt="Contato">
                         <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category">
-                                    <div class="col-sm-6">
-                                        <div class="contact-info">
-                                            contato@cosmoslab.com.br</br>
-                                            +55 54 91905340</br>
-                                            +55 54 91589696</br>
-                                            Caxias do Sul - Brasil
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="contact-form">
-                                            <p>Envie sua mensagem</p>
-                                            <form action="MAILTO:contato@cosmoslab.com.br" method="post" enctype="text/plain" id="contact">
-                                                <p class="validation-info" id="name-validation"></p>
-                                                <input id="contact-form-name" type="text" onblur="validateName()" name="name" placeholder="NOME" value=""><br>
-                                                <p class="validation-info" id="email-validation"></p>
-                                                <input id="contact-form-email" type="text" onblur="validateEmail()" name="mail" placeholder="EMAIL" value=""><br>
-                                                <p class="validation-info" id="message-validation"></p>
-                                                <textarea id="contact-form-message" onkeydown="erasePlaceHolder()" onchange="erasePlaceHolder()" onblur="validateMessage()" class="contact-message" name="message" rows="7" cols="30">MENSAGEM</textarea><br/>                                            
-                                                <input type="submit" value="Enviar">
-                                            </form>
-                                        </div>
+                            <div class="col-sm-6">
+                                <div class="contact-info">
+                                    contato@cosmoslab.com.br</br>
+                                    +55 54 9190-5340</br>
+                                    +55 54 9158-9696</br>
+                                    Caxias do Sul - Brasil
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-form-container">
+                                    <div class="contact-form">
+                                        <p>Envie sua mensagem</p>
+                                        <form action="MAILTO:contato@cosmoslab.com.br" method="post" enctype="text/plain" id="contact">
+                                            <p class="validation-info" id="name-validation"></p>
+                                            <input id="contact-form-name" type="text" onblur="validateName()" name="name" placeholder="NOME" value="">
+                                            <br>
+                                            <p class="validation-info" id="email-validation"></p>
+                                            <input id="contact-form-email" type="text" onblur="validateEmail()" name="mail" placeholder="EMAIL" value="">
+                                            <br>
+                                            <p class="validation-info" id="message-validation"></p>
+                                            <textarea id="contact-form-message" onkeydown="erasePlaceHolder()" onchange="erasePlaceHolder()" onblur="validateMessage()"
+                                            class="contact-message" name="message" rows="7" cols="30">MENSAGEM</textarea>
+                                            <br/>
+                                            <input type="submit" value="Enviar">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +245,6 @@
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
