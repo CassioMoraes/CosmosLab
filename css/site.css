@@ -12,7 +12,7 @@
          url('myfont-webfont.svg#svgFontName') format('svg');
     }
 
-html, body, .container-table {    
+html, body, .container-table {
     height: 100%;
     background: #000000;
 }
@@ -23,10 +23,10 @@ html, body, .container-table {
 
 .vertical-center-row {
     display: table-cell;
-    vertical-align: middle;    
+    vertical-align: middle;
 }
 
-#bg {
+.background {
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 1024px;
@@ -39,7 +39,7 @@ html, body, .container-table {
     left: 0;
 }
 
-#menu{
+.menu{
     width: 50%;
     float: right;
     z-index: 10;
@@ -54,11 +54,12 @@ html, body, .container-table {
     width: 80%;
     margin-left:auto;
     margin-right:auto;
-    display:center;
 }
 
 .circle {
-    position: absolute;        
+    position: absolute;
+    background: -ms-radial-gradient(    rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Internet Explorer 10+ */    
+    background: -o-radial-gradient(     rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Opera 11.10+ */
     background: -webkit-radial-gradient(rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Safari 5.1 to 6.0 */
     background: -o-radial-gradient(     rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Opera 11.6 to 12.0 */
     background: -moz-radial-gradient(   rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Firefox 3.6 to 15 */
@@ -132,10 +133,11 @@ html, body, .container-table {
     font-family: Modern-M;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);  
     -moz-transform:translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
     text-align: center;
     padding: 8px;
     text-decoration: none;
@@ -227,7 +229,7 @@ html, body, .container-table {
     font-family: Modern-M;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {    
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 30px;
 }
 
@@ -239,6 +241,50 @@ html, body, .container-table {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 40px;
     }
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container{
+	width: 99.99%;
+	height: 50%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }
 
 .contact-info{
