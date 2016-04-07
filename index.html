@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
+    <script src="js\product.js"></script>
     <script src="js\contact.js"></script>
     <script src="js\overlay.js"></script>
     <script src="js\sparkle-spawn.js"></script>
@@ -116,25 +117,23 @@
             <div class="row no-gutter">
                 <div class="col-sm-6">
                     <div class="portfolio-box">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="img/products/web.jpg" class="img-responsive" alt="Desenvolvimento Web">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> Web
-                                            </div>
+                        <div id="flipper-web" class="flipper" onclick="flip('#flipper-web')">
+                            <div class="front">
+                                <img src="img/products/web.jpg" class="img-responsive" alt="Desenvolvimento Web">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> Web
                                         </div>
                                     </div>
                                 </div>
-                                <div class="back">
-                                    <img src="img/products/flip-web.jpg" class="img-responsive" alt="Desenvolvimento Web">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> Web 2
-                                            </div>
+                            </div>
+                            <div class="back">
+                                <img src="img/products/flip-web.jpg" class="img-responsive" alt="Desenvolvimento Web">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> Web 2
                                         </div>
                                     </div>
                                 </div>
@@ -144,25 +143,23 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="portfolio-box">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="img/products/graphics.jpg" class="img-responsive" alt="Desenvolvimento Gráfico">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> Gráfico
-                                            </div>
+                        <div id="flipper-graphics" class="flipper" onclick="flip('#flipper-graphics')">
+                            <div class="front">
+                                <img src="img/products/graphics.jpg" class="img-responsive" alt="Desenvolvimento Gráfico">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> Gráfico
                                         </div>
                                     </div>
                                 </div>
-                                <div class="back">
-                                    <img src="img/products/flip-graphics.jpg" class="img-responsive" alt="Desenvolvimento Web">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> Web 2
-                                            </div>
+                            </div>
+                            <div class="back">
+                                <img src="img/products/flip-graphics.jpg" class="img-responsive" alt="Desenvolvimento Web">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> Gráfico 2
                                         </div>
                                     </div>
                                 </div>
@@ -171,26 +168,24 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="portfolio-box">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="img/products/apps.jpg" class="img-responsive" alt="Desenvolvimento de Aplicativos">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> de Aplicativos
-                                            </div>
+                    <div class="portfolio-box flip-container">
+                        <div id="flipper-apps" class="flipper" onclick="flip('#flipper-apps')">
+                            <div class="front">
+                                <img src="img/products/apps.jpg" class="img-responsive" alt="Desenvolvimento de Aplicativos">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> de Aplicativos
                                         </div>
                                     </div>
                                 </div>
-                                <div class="back">
-                                    <img src="img/products/flip-apps.jpg" class="img-responsive" alt="Desenvolvimento Aplicativos">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> de Aplicativos
-                                            </div>
+                            </div>
+                            <div class="back">
+                                <img src="img/products/flip-apps.jpg" class="img-responsive" alt="Desenvolvimento Aplicativos">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> de Aplicativos 2
                                         </div>
                                     </div>
                                 </div>
@@ -199,26 +194,24 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="portfolio-box">
-                        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                            <div class="flipper">
-                                <div class="front">
-                                    <img src="img/products/games.jpg" class="img-responsive" alt="Desenvolvimento de Games">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> de Games
-                                            </div>
+                    <div class="portfolio-box flip-container">
+                        <div id="flipper-games" class="flipper" onclick="flip('#flipper-games')">
+                            <div class="front">
+                                <img src="img/products/games.jpg" class="img-responsive" alt="Desenvolvimento de Games">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> de Games
                                         </div>
                                     </div>
                                 </div>
-                                <div class="back">
-                                    <img src="img/products/flip-apps.jpg" class="img-responsive" alt="Desenvolvimento Aplicativos">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category">
-                                                Desenvolvimento</br> de Aplicativos
-                                            </div>
+                            </div>
+                            <div class="back">
+                                <img src="img/products/flip-apps.jpg" class="img-responsive" alt="Desenvolvimento Games">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category">
+                                            Desenvolvimento</br> de Games 2
                                         </div>
                                     </div>
                                 </div>

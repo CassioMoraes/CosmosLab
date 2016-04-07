@@ -199,9 +199,11 @@ html, body, .container-table {
     display: block;
     position: relative;
     margin: 0 auto;
+    perspective: 1000;
+    
 }
 
-.portfolio-box .portfolio-box-caption {    
+.portfolio-box .portfolio-box-caption {
     display: block;
     position: absolute;
     bottom: 0;
@@ -244,32 +246,27 @@ html, body, .container-table {
 }
 
 /* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000;
+.flip-container {	
+    cursor: pointer;
+    display: block;
 }
 
 /* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-	transform: rotateY(180deg);
-}
-
-.flip-container{
-	width: 99.99%;
-	height: 50%;
+.flip {
+    transform: rotateY(180deg);
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
+    display: inline-block
 }
 
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
