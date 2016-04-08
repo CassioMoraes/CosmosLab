@@ -199,8 +199,6 @@ html, body, .container-table {
     display: block;
     position: relative;
     margin: 0 auto;
-    perspective: 1000;
-    
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -246,9 +244,14 @@ html, body, .container-table {
 }
 
 /* entire container, keeps perspective */
-.flip-container {	
+.flip-container {
     cursor: pointer;
-    display: block;
+    perspective: 1000;
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 379.40px;
 }
 
 /* flip the pane when hovered */
@@ -260,8 +263,6 @@ html, body, .container-table {
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-	position: relative;
-    display: inline-block
 }
 
 /* hide back of pane during swap */
