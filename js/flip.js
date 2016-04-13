@@ -1,7 +1,7 @@
 function flip(cardId) {
     if ($(cardId).hasClass('flip')) {
         $(cardId).removeClass('flip');
-        
+
         return true;
     }
 
@@ -11,7 +11,7 @@ function flip(cardId) {
     return true;
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     updateImageSize();
     $(window).resize(function() {
         updateImageSize();
@@ -21,12 +21,25 @@ $(document).ready(function () {
 var IMAGE_X = 960;
 var IMAGE_Y = 540;
 
-function updateImageSize()
-{
-    var currentWidth = $('.flip-container').width();
-    var newHeight = Math.floor((currentWidth * IMAGE_Y) / IMAGE_X);
-    
-    $('.flip-container').height(newHeight + 'px');
-    $('.front').height(newHeight + 'px');
-    $('.back').height(newHeight + 'px');
+function updateImageSize() {
+    flipContainer = $('.flip-container');
+
+    for (flipContainer in flipContainer) {
+        currentFlipConteiner = flipContainers[flipContainer];
+
+        var currentWidth = currentFlipConteiner.width();
+
+        var newHeight;
+
+        if (currentFlipConteiner.id.indexOf('large') > -1) {
+            newHeight = Math.floor((currentWidth * IMAGE_Y) / (IMAGE_X * 2));
+        }
+        else {
+            newHeight = Math.floor((currentWidth * IMAGE_Y) / IMAGE_X);
+        }
+
+        currentFlipConteiner.height(newHeight + 'px');
+        currentFlipConteiner.find('.front').height(newHeight + 'px');
+        currentFlipConteiner.find('.back').height(newHeight + 'px');
+    }
 }
