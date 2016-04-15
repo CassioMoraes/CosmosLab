@@ -289,6 +289,7 @@ html, body, .container-table {
 }
 
 .contact-info{
+    font-family: Modern-M;
     min-height: 100%;  /* Fallback for vh unit */
     min-height: 100vh; /* You might also want to use 'height' property instead.
 
@@ -297,7 +298,7 @@ html, body, .container-table {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex; 
+    display: flex;
   
     /* Align the bootstrap's container vertically */
     -ms-box-align: center;
@@ -321,7 +322,19 @@ html, body, .container-table {
     text-align: left;
 }
 
+.contact-info a{
+     font-size: 30px;
+     text-align: left;
+     text-decoration: none;
+     color: yellow;
+ }
+ 
+ .contact-info a:hover{
+     text-decoration: none;
+ }
+
 .contact-form-container{
+    font-family: Modern-M;
     min-height: 100%;  /* Fallback for vh unit */
     min-height: 100vh; /* You might also want to use 'height' property instead.
 
@@ -352,7 +365,7 @@ html, body, .container-table {
     
     font-size: 30px;
     text-align: left;
-}
+} 
 
 .contact-form input[type="text"]{
     width: 100%;

@@ -22,12 +22,12 @@ var IMAGE_X = 960;
 var IMAGE_Y = 540;
 
 function updateImageSize() {
-    flipContainer = $('.flip-container');
+    flipContainers = $('.flip-container');
 
-    for (flipContainer in flipContainer) {
+    for (flipContainer in flipContainers) {
         currentFlipConteiner = flipContainers[flipContainer];
 
-        var currentWidth = currentFlipConteiner.width();
+        var currentWidth = $(currentFlipConteiner).width();
 
         var newHeight;
 
@@ -38,8 +38,8 @@ function updateImageSize() {
             newHeight = Math.floor((currentWidth * IMAGE_Y) / IMAGE_X);
         }
 
-        currentFlipConteiner.height(newHeight + 'px');
-        currentFlipConteiner.find('.front').height(newHeight + 'px');
-        currentFlipConteiner.find('.back').height(newHeight + 'px');
+        $(currentFlipConteiner).height(newHeight + 'px');
+        $(currentFlipConteiner).find('.front').height(newHeight + 'px');
+        $(currentFlipConteiner).find('.back').height(newHeight + 'px');
     }
 }
