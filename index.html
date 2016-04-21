@@ -392,7 +392,7 @@ while(x=eval(x));
                                     <div class="contact-form">
                                         <div>
                                             <p>Envie sua mensagem</p>
-                                            <form action="php/sendMail.php" method="post" enctype="application/x-www-form-urlencoded" id="contact">
+                                            <div id="contact">
                                                 <p class="validation-info" id="name-validation"></p>
                                                 <input id="contact-form-name" type="text" onblur="validateName()" name="name" placeholder="NOME" value="">
                                                 <br>
@@ -403,8 +403,9 @@ while(x=eval(x));
                                                 <textarea id="contact-form-message" onkeydown="erasePlaceHolder()" onchange="erasePlaceHolder()" onblur="validateMessage()"
                                                     class="contact-message" name="message" rows="7" cols="30">MENSAGEM</textarea>
                                                 <br/>
-                                                <input type="submit" value="Enviar">
-                                            </form>
+                                                <p class="message-info" id="message-result"></p>
+                                                <input type="button" id="submit" value="Enviar" onclick="sendMessage()">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

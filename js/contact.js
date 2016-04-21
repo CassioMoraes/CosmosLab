@@ -41,3 +41,30 @@ function validateMessage(){
     
     $("#message-validation").text("");
 }
+
+function sendMessage()
+{
+    $.ajax({
+        url: 'php/sendMail.php',
+        type:'POST',
+        data:
+        {
+            name: $("#contact-form-name").val(),
+            mail: $("#contact-form-email").val(),
+            message: $("#contact-form-message").val()
+        },
+        error: function(msg)
+        {
+            
+        },
+        success: function(msg)
+        {
+            if (msg.indexOf("SMTP connect() failed") > -1){
+                $("#message-result").text("Não foi possível enviar a mensagem!");
+            }
+            else{
+                $("#message-result").text("Mensagem enviada com sucesso!");
+            }
+        }
+    });
+}
