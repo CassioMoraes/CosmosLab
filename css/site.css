@@ -412,7 +412,36 @@ html, body, .container-table {
     display: inline-block;
 }
 
+@media all and (max-width: 1024px) {
+    .contact-info {
+        min-height: 70vh;
+    }
+    
+    .contact-form-container{
+        min-height: 70vh;
+    }
+    
+    .contact-message{
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .contact-info{    
+        min-height: 30vh;
+    }
+
+   .contact-form-container{
+        min-height: 40vh;
+    }
+}
+
 @media all and (max-width: 640px) {
+    .contact-info a{
+        font-size: 20px;
+        min-height: 30vh;
+    }
+
     .contact-info{
         font-size: 20px;
         min-height: 30vh;
