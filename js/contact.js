@@ -11,7 +11,7 @@ function validateName(){
         return;   
     }
     
-    $("#name-validation").text("");   
+    $("#name-validation").text("");
 }
 
 function validateEmail(){

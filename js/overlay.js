@@ -1,4 +1,4 @@
-window.onload = function() {
+function initializeOverlay() {
     document.getElementById("options").style.pointerEvents = "none";
 };
 

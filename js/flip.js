@@ -5,18 +5,19 @@ function flip(cardId) {
         return true;
     }
 
-    $(cardId).addClass('flip').mouseleave(function() {
+    $(cardId).addClass('flip').mouseleave(function () {
         $(cardId).removeClass('flip');
     });
     return true;
 }
 
-$(document).ready(function() {
-    updateImageSize();
-    $(window).resize(function() {
-        updateImageSize();
-    });
-});
+// $(document).ready(function () {
+//     updateImageSize();
+//     $(window).resize(function () {
+//         updateImageSize();
+//         alert("resizing");
+//     });
+// });
 
 var IMAGE_X = 960;
 var IMAGE_Y = 540;
