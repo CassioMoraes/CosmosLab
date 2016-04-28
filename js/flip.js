@@ -1,7 +1,11 @@
 function flip(cardId) {
+    var isInternetExplorer = /*@cc_on!@*/false || !!document.documentMode;
+    
+    if (isInternetExplorer)
+        return true;
+    
     if ($(cardId).hasClass('flip')) {
         $(cardId).removeClass('flip');
-
         return true;
     }
 
@@ -10,14 +14,6 @@ function flip(cardId) {
     });
     return true;
 }
-
-// $(document).ready(function () {
-//     updateImageSize();
-//     $(window).resize(function () {
-//         updateImageSize();
-//         alert("resizing");
-//     });
-// });
 
 var IMAGE_X = 960;
 var IMAGE_Y = 540;

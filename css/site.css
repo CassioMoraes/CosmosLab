@@ -1,18 +1,16 @@
-@font-face{
+@font-face {
     font-family: "Modern-M";
-    src: url('../fonts/modern M.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/modern M.ttf')  format('truetype');
+    src: url('../fonts/modern M.eot?#iefix') format('embedded-opentype'), url('../fonts/modern M.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MyFontFamily';
-    src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), 
-         url('myfont-webfont.woff') format('woff'), 
-         url('myfont-webfont.ttf')  format('truetype'),
-         url('myfont-webfont.svg#svgFontName') format('svg');
-    }
+    src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), url('myfont-webfont.woff') format('woff'), url('myfont-webfont.ttf') format('truetype'), url('myfont-webfont.svg#svgFontName') format('svg');
+}
 
-html, body, .container-table {
+html,
+body,
+.container-table {
     height: 100%;
     background: #000000;
 }
@@ -39,7 +37,7 @@ html, body, .container-table {
     left: 0;
 }
 
-.menu{
+.menu {
     width: 50%;
     float: right;
     z-index: 10;
@@ -52,88 +50,111 @@ html, body, .container-table {
 
 .center-block {
     width: 80%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circle {
     position: absolute;
-    background: -ms-radial-gradient(    rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Internet Explorer 10+ */    
-    background: -o-radial-gradient(     rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Opera 11.10+ */
-    background: -webkit-radial-gradient(rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(     rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(   rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(        rgba(229,126,231,1), rgba(225,231,255,0.4), rgba(255,231,255,0)); /* Standard syntax */
+    background: -ms-radial-gradient( rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* Internet Explorer 10+ */
+    background: -o-radial-gradient( rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* Opera 11.10+ */
+    background: -webkit-radial-gradient(rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient( rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient( rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* For Firefox 3.6 to 15 */
+    background: radial-gradient( rgba(229, 126, 231, 1), rgba(225, 231, 255, 0.4), rgba(255, 231, 255, 0));
+    /* Standard syntax */
 }
 
+
 /*Manter navbar na direita*/
-.navbar-right {float: right !important;}
+
+.navbar-right {
+    float: right !important;
+}
+
 
 /* The Overlay (background) */
-.overlay {    
+
+.overlay {
     height: 100%;
     width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
     opacity: 0;
     overflow: hidden;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
+
 
 /* Position the content inside the overlay */
+
 .overlay-content {
     position: relative;
-    top: 0; /* 25% from the top */
+    top: 0;
+    /* 25% from the top */
     height: 100%;
-    width: 16.66%; /* 100% width */
-    text-align: center; /* Centered text/links */
+    width: 16.66%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
 }
 
-.panel-1{
+.panel-1 {
     float: left;
-    background-color: rgb(33,1,33);
-    background-color: rgba(33,1,33,0.9);
+    background-color: rgb(33, 1, 33);
+    background-color: rgba(33, 1, 33, 0.9);
 }
 
-.panel-2{
+.panel-2 {
     float: left;
-    background-color: rgb(39,3,40);
-    background-color: rgba(39,3,40,0.9);
+    background-color: rgb(39, 3, 40);
+    background-color: rgba(39, 3, 40, 0.9);
 }
 
-.panel-3{    
+.panel-3 {
     float: left;
-    background-color: rgb(49,8,49);
-    background-color: rgba(49,8,49,0.9);
+    background-color: rgb(49, 8, 49);
+    background-color: rgba(49, 8, 49, 0.9);
 }
 
-.panel-4{
+.panel-4 {
     float: left;
-    background-color: rgb(60,13,60);
-    background-color: rgba(60,13,60,0.9);
+    background-color: rgb(60, 13, 60);
+    background-color: rgba(60, 13, 60, 0.9);
 }
 
-.panel-5{
+.panel-5 {
     float: left;
-    background-color: rgb(74,19,75);
-    background-color: rgba(74,19,75,0.9);
+    background-color: rgb(74, 19, 75);
+    background-color: rgba(74, 19, 75, 0.9);
 }
 
-.panel-6{
+.panel-6 {
     float: left;
-    background-color: rgb(91,25,91);
-    background-color: rgba(91,25,91,0.9);
+    background-color: rgb(91, 25, 91);
+    background-color: rgba(91, 25, 91, 0.9);
 }
+
 
 /* The navigation links inside the overlay */
+
 .overlay a {
     font-family: Modern-M;
     position: relative;
     top: 50%;
-    -moz-transform:translateY(-50%);
+    -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -142,37 +163,27 @@ html, body, .container-table {
     padding: 8px;
     text-decoration: none;
     font-size: 35px;
-    color: rgb(255,255,0);
+    color: rgb(255, 255, 0);
     display: inline-block;
     line-height: normal;
-    transition: 0.3s; /* Transition effects on hover (color) */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
 }
 
+
 /*IE Hack*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {    
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     .home-logo {
         width: 100%;
     }
-    
     .overlay a {
-        position: absolute;
-        top: 50%;
-        left:50%;
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);  
-    }
-}
-
-/*Edge Hack*/
-@supports (-ms-accelerator:true) 
-{ 
-     .overlay a {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -183,9 +194,27 @@ html, body, .container-table {
     }
 }
 
+
+/*Edge Hack*/
+
+@supports (-ms-accelerator:true) {
+    .overlay a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
+
 /*Products*/
+
 .no-padding {
     padding: 0;
 }
@@ -210,11 +239,11 @@ html, body, .container-table {
     text-align: center;
     color: #ff0;
     opacity: 1;
-    background: rgb(91,25,91);
-    background:rgba(91,25,91,0);
+    background: rgb(91, 25, 91);
+    background: rgba(91, 25, 91, 0);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
-    -o-transition: all .35s; 
+    -o-transition: all .35s;
     transition: all .35s;
 }
 
@@ -236,8 +265,8 @@ html, body, .container-table {
 }
 
 .portfolio-box-link:hover .portfolio-box-caption {
-    background:rgb(91,25,91);
-    background:rgba(91,25,91,0.6);
+    background: rgb(91, 25, 91);
+    background: rgba(91, 25, 91, 0.6);
 }
 
 @media(min-width:768px) {
@@ -246,52 +275,87 @@ html, body, .container-table {
     }
 }
 
+
 /* entire container, keeps perspective */
+
 .flip-container {
     cursor: pointer;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
     perspective: 1000;
 }
 
-.flip-container, .front, .back {
+.flip-container,
+.front,
+.back {
     width: 100%;
     height: 379.40px;
 }
 
+
 /* flip the pane when hovered */
+
 .flip {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
+
 /* flip speed goes here */
+
 .flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
+    transition: 0.6s;
+    transform-style: preserve-3d;
 }
+
 
 /* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 /* front pane, placed above back */
+
 .front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+    z-index: 2;
+    /* for firefox  */
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
+
 
 /* back, initially hidden pane */
+
 .back {
-	transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.contact-info{
+.contact-info {
     font-family: Modern-M;
-    min-height: 100%;  /* Fallback for vh unit */
-    min-height: 100vh; /* You might also want to use 'height' property instead.
+    min-height: 100%;
+    /* Fallback for vh unit */
+    min-height: 100vh;
+    /* You might also want to use 'height' property instead.
 
     /* Make it a flex container */
     display: -webkit-box;
@@ -299,7 +363,6 @@ html, body, .container-table {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-  
     /* Align the bootstrap's container vertically */
     -ms-box-align: center;
     -webkit-box-align: center;
@@ -307,105 +370,100 @@ html, body, .container-table {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-  
     /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
     width: 100%;
-    
-    -ms-box-pack: center;
-    -webkit-box-pack : center;
-    -moz-box-pack : center;
-    -ms-flex-pack : center;
-    -webkit-justify-content : center;
-    justify-content : center;
-    
-    font-size: 30px;
-    text-align: left;
-}
-
-.contact-info a{
-     font-size: 30px;
-     text-align: left;
-     text-decoration: none;
-     color: yellow;
- }
- 
- .contact-info a:hover{
-     text-decoration: none;
- }
-
-.contact-form-container{
-    font-family: Modern-M;
-    min-height: 100%;  /* Fallback for vh unit */
-    min-height: 100vh; /* You might also want to use 'height' property instead.
-
-    /* Make it a flex container */
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; 
-  
-    /* Align the bootstrap's container vertically */
-    -ms-box-align: center;
-    -webkit-box-align: center;
-    -webkit-align-items : center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  
-    /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
-    width: 100%;
-    
     -ms-box-pack: center;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    
     font-size: 30px;
     text-align: left;
-} 
+}
 
-.contact-form input[type="text"]{
+.contact-info a {
+    font-size: 30px;
+    text-align: left;
+    text-decoration: none;
+    color: yellow;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+}
+
+.contact-form-container {
+    font-family: Modern-M;
+    min-height: 100%;
+    /* Fallback for vh unit */
+    min-height: 100vh;
+    /* You might also want to use 'height' property instead.
+
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* Align the bootstrap's container vertically */
+    -ms-box-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
+    width: 100%;
+    -ms-box-pack: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 30px;
+    text-align: left;
+}
+
+.contact-form input[type="text"] {
     width: 100%;
     margin-bottom: 3px;
-    background-color:rgb(49,8,49);
-    background-color:rgba(49,8,49,0.4);
+    background-color: rgb(49, 8, 49);
+    background-color: rgba(49, 8, 49, 0.4);
     color: white;
     border: none;
     padding-left: 10px;
 }
 
-.contact-form input[type="button"]{
+.contact-form input[type="button"] {
     float: right;
     text-align: right;
     margin-bottom: 3px;
     background-color: transparent;
     color: #ff0;
     border: none;
-    outline:none;
+    outline: none;
     display: inline;
 }
 
-.contact-message{ 
+.contact-message {
     width: 100%;
     margin-bottom: 3px;
-    background-color:rgb(49,8,49);
-    background-color:rgba(49,8,49,0.4);
-    color: rgb(169,169,169);
+    background-color: rgb(49, 8, 49);
+    background-color: rgba(49, 8, 49, 0.4);
+    color: rgb(169, 169, 169);
     border: none;
     height: 300px;
     padding-left: 10px;
 }
 
-.validation-info{
+.validation-info {
     margin: 0;
     font-size: 20px;
     color: #fff;
 }
 
-.message-info{
+.message-info {
     margin: 0;
     font-size: 30px;
     color: #fff;
@@ -416,38 +474,33 @@ html, body, .container-table {
     .contact-info {
         min-height: 70vh;
     }
-    
-    .contact-form-container{
+    .contact-form-container {
         min-height: 70vh;
     }
-    
-    .contact-message{
+    .contact-message {
         height: 200px;
     }
 }
 
 @media all and (max-width: 800px) {
-    .contact-info{    
+    .contact-info {
         min-height: 30vh;
     }
-
-   .contact-form-container{
+    .contact-form-container {
         min-height: 40vh;
     }
 }
 
 @media all and (max-width: 640px) {
-    .contact-info a{
+    .contact-info a {
         font-size: 20px;
         min-height: 30vh;
     }
-
-    .contact-info{
+    .contact-info {
         font-size: 20px;
         min-height: 30vh;
     }
-
-  .contact-form-container {
-      display: none;
-  }
+    .contact-form-container {
+        display: none;
+    }
 }

@@ -6,5 +6,4 @@ window.onload = function() {
 
 window.onresize = function () {
     updateImageSize();
-    alert("resizing");
 }
