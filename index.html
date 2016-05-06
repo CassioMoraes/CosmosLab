@@ -1,11 +1,11 @@
-<!--<!DOCTYPE HTML>-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="pt-br">
 
 <head>
     <title>Cosmos Lab</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Cosmos Lab é uma empresa dedicada a fazer sua vida na internet mais fácil." />
     <meta name="keywords" content="Cosmos Lab, estúdio, estudio, criativo, criatividade, agencia, agência, caxias do sul, caxias, do, sul, websites, sites, facebook, gerenciamento, design, webdesign, web, creative studio, creative, studio" />
 
@@ -94,11 +94,8 @@
     </nav>
 
     <section id="home">
-        <div class="container container-table">
-            <img class="background" src="img\Home_Background.jpg">
-
+        <div class="container container-table fullpage">
             <div class="sparkles"></div>
-
             <div class="row vertical-center-row">
                 <div class="col-sm-12">
                     <div class="center-block">
@@ -352,11 +349,12 @@
                         <div class="portfolio-box-caption">
                             <div class="col-sm-6">
                                 <div class="contact-info">
-                                    <div>
-                                        <a href="mailto:contato@cosmoslab.com.br">contato@cosmoslab.com.br</a><br>
-                                        <a href="tel:+555491905340">+55 54 9190-5340</a><br>
-                                        <a href="tel:+555491589696">+55 54 9158-9696</a><br> Caxias do Sul - Brasil
-                                    </div>
+                                    <ul>
+                                        <li><a href="mailto:contato@cosmoslab.com.br">contato@cosmoslab.com.br</a></li>
+                                        <li><a href="tel:+555491905340">+55 54 9190-5340</a></li>
+                                        <li><a href="tel:+555491589696">+55 54 9158-9696</a></li>
+                                        <li>Caxias do Sul - Brasil</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -364,7 +362,7 @@
                                     <div class="contact-form">
                                         <div>
                                             <p>Envie sua mensagem</p>
-                                            <div id="contact">
+                                            <div>
                                                 <p class="validation-info" id="name-validation"></p>
                                                 <input id="contact-form-name" type="text" onblur="validateName()" name="name" placeholder="NOME" value="">
                                                 <br>
@@ -388,5 +386,31 @@
         </div>
     </section>
 </body>
+
+<footer>
+    <div class="footer-background">
+        <img src="img/footer-background.jpg">
+        <div class="footer-links">
+            <a href="#home">HOME | </a>
+            <a href="#about">SOBRE | </a>
+            <a href="#products">PRODUTOS | </a>
+            <a href="#cases">CASES | </a>
+            <a href="#blog">BLOG | </a>
+            <a href="#contact">CONTATO</a>
+        </div>
+
+        <div class="footer-info">
+            <div class="col-sm-4">
+                <h6>&copy;2016 CosmosLab</h6>
+            </div>
+            <div class="col-sm-4">
+                <h6 class="info-center">contato@cosmoslab.com.br +55 54 9190-5340 +55 54 9158-9696</h6>
+            </div>
+            <div class="col-sm-4">
+                <h6 class="info-center">CRAZE</h6>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
