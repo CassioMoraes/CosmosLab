@@ -537,16 +537,34 @@ ul {
 .footer-info {
     display: inline-block;
     position: absolute;
-    margin-left: 20px;
-    font-size: 15px;
     width: 100%;
     bottom: 0;
 }
 
+.footer-contact{
+    margin-left: 50px;
+    width: auto;
+}
+
+.footer-social-col{
+    float: right;
+}
+
 .footer-info h6 {
     display: inline-block;
+    font-size: 15px;
 }
 
 .info-center {
     text-align: center;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.footer-social img {
+    width: 40px;
+    height: 40px;
 }
