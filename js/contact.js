@@ -1,3 +1,5 @@
+"use strict";
+
 function erasePlaceHolder(){
     if ($("#contact-form-message").val() == "MENSAGEM"){
         $("#contact-form-message").val("");

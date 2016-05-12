@@ -1,3 +1,5 @@
+"use strict";
+
 var tickTimer = 20;
 
 setInterval(onTimerTick, tickTimer);
@@ -11,7 +13,7 @@ function StartSparkling() {
     var height = $('#home').height();
     var width = $('#home').width();
 
-    for (i = 0; i < 100; i++) {
+    for (var i = 0; i < 100; i++) {
         var x = (Math.random() * (width - (sparkleMaxSize + sparkleSizeTolerance))).toFixed();
         var y = (Math.random() * (height - (sparkleMaxSize + sparkleSizeTolerance))).toFixed();
         var randonSize = Math.floor(Math.random() * sparkleMaxSize) + sparkleMinSize;

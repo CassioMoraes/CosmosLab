@@ -1,3 +1,5 @@
+"use strict";
+
 function initializeOverlay() {
     document.getElementById("options").style.pointerEvents = "none";
 };
