@@ -514,7 +514,6 @@ ul {
 .footer-background img {
     max-width: 100%;
     display: block;
-    height: auto;
 }
 
 .footer-links {
@@ -540,16 +539,23 @@ ul {
     display: inline-block;
     position: absolute;
     width: 100%;
+    height: auto;
     bottom: 0;
 }
 
 .footer-contact {
+    width: auto;
     margin: 0 auto;
 }
 
 .footer-info h6 {
     display: inline-block;
-    font-size: 15px;
+    font-size: 18px;
+}
+
+.footer-social-col {
+    width: 190px;
+    padding: 0;
 }
 
 .footer-social a {
@@ -563,22 +569,63 @@ ul {
     height: 40px;
 }
 
+.full-contat {
+    display: inline-block;
+}
+
 @media all and (max-width: 1028px) {
     .footer-links {
         font-size: 30px;
     }
-    
     .footer-info h6 {
         font-size: 13px;
     }
 }
 
 @media all and (max-width: 768px) {
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
     .footer-links {
         visibility: hidden;
     }
-    
-    .footer-info{
-        align-content: center
+    .footer-info {
+        text-align: center;
+    }
+    .footer-social-col {
+        margin: 0 auto;
+    }
+    .footer-info h6 {
+        font-size: 20px;
+    }
+    .footer-content h6 {
+        display: block;
+    }
+    .full-numbers {
+        display: block;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .footer-background img {
+        max-width: 500%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .footer-info h6 {
+        font-size: 18px;
+    }
+    .full-numbers {
+        display: block;
+    }
+    .first-number {
+        display: block
+    }
+    .second-number {
+        display: block
     }
 }
