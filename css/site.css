@@ -547,7 +547,7 @@ ul {
     width: 51%;
 }
 
-.footer-info h6 {
+.footer-info p {
     display: inline-block;
     font-size: 18px;
 }
@@ -578,11 +578,11 @@ ul {
     height: 40px;
 }
 
-@media all and (max-width: 1028px) {
+@media all and (max-width: 1150px) {
     .footer-links {
         font-size: 30px;
     }
-    .footer-info h6 {
+    .footer-info p {
         font-size: 13px;
     }
 }
@@ -607,10 +607,10 @@ ul {
     .footer-social-col {
         margin: 0 auto;
     }
-    .footer-info h6 {
+    .footer-info p {
         font-size: 20px;
     }
-    .footer-content h6 {
+    .footer-content p {
         display: block;
     }
     .full-numbers {
@@ -618,7 +618,7 @@ ul {
     }
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 685px) {
     .footer-social-col {
         width: 33%;
     }
@@ -631,8 +631,8 @@ ul {
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
-    .footer-info h6 {
-        font-size: 18px;
+    .footer-info p {
+        font-size: 17px;
     }
     .full-numbers {
         display: block;
