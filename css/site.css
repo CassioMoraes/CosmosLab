@@ -228,6 +228,7 @@ ul {
     display: block;
     position: relative;
     margin: 0 auto;
+    font-family: Modern-M;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -277,6 +278,11 @@ ul {
 
 .about-background {
     height: 100%;
+}
+
+.about-text {
+    text-align: center;
+    text-justify: auto;
 }
 
 .flip-container {
@@ -349,6 +355,13 @@ ul {
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
+}
+
+.about-flip-background {
+    background-color: lightgray;
+    background-color: rgba(191, 191, 191, 0.8);
+    padding: 0 10%;
+    color: rgb(49, 9, 49);
 }
 
 .contact-info {
@@ -510,6 +523,7 @@ ul {
     position: relative;
     font-family: Modern-M;
     color: white;
+    color: aliceblue;
 }
 
 .footer-background img {
@@ -528,6 +542,7 @@ ul {
 }
 
 .footer-links a {
+    color: white;
     color: aliceblue;
     text-decoration: none;
 }
