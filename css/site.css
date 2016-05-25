@@ -360,24 +360,54 @@ ul {
 .about-flip-background {
     background-color: lightgray;
     background-color: rgba(191, 191, 191, 0.8);
-    padding: 0 10%;
+    padding: 5% 10%;
     color: rgb(49, 9, 49);
+    line-height: 200%;
 }
 
+@media all and (max-width: 1031px) {
+    .about-flip-background {
+        line-height: 100%;
+    }
+}
+
+@media all and (max-width: 788px) {
+    .about-flip-background img {
+        width: 246px;
+    }
+}
+
+@media all and (max-width: 591px) {
+    .about-flip-background {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .img-responsive {
+        width: 100%;
+    }
+}
+
+
+}
 .contact-info {
     font-family: Modern-M;
     min-height: 100%;
     /* Fallback for vh unit */
+    
     min-height: 100vh;
     /* You might also want to use 'height' property instead.
 
     /* Make it a flex container */
+    
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     /* Align the bootstrap's container vertically */
+    
     -ms-box-align: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -385,6 +415,7 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
+    
     width: 100%;
     -ms-box-pack: center;
     -webkit-box-pack: center;
@@ -395,32 +426,32 @@ ul {
     font-size: 30px;
     text-align: left;
 }
-
 .contact-info a {
     font-size: 30px;
     text-align: left;
     text-decoration: none;
     color: yellow;
 }
-
 .contact-info a:hover {
     text-decoration: none;
 }
-
 .contact-form-container {
     font-family: Modern-M;
     min-height: 100%;
     /* Fallback for vh unit */
+    
     min-height: 100vh;
     /* You might also want to use 'height' property instead.
 
     /* Make it a flex container */
+    
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     /* Align the bootstrap's container vertically */
+    
     -ms-box-align: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -428,6 +459,7 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
+    
     width: 100%;
     -ms-box-pack: center;
     -webkit-box-pack: center;
@@ -438,7 +470,6 @@ ul {
     font-size: 30px;
     text-align: left;
 }
-
 .contact-form input[type="text"] {
     width: 100%;
     margin-bottom: 3px;
@@ -448,7 +479,6 @@ ul {
     border: none;
     padding-left: 10px;
 }
-
 .contact-form input[type="button"] {
     float: right;
     text-align: right;
@@ -459,7 +489,6 @@ ul {
     outline: none;
     display: inline;
 }
-
 .contact-message {
     width: 100%;
     margin-bottom: 3px;
@@ -470,67 +499,64 @@ ul {
     height: 300px;
     padding-left: 10px;
 }
-
 .validation-info {
     margin: 0;
     font-size: 20px;
     color: #fff;
 }
-
 .message-info {
     margin: 0;
     font-size: 30px;
     color: #fff;
     display: inline-block;
 }
-
 @media all and (max-width: 1024px) {
     .contact-info {
         min-height: 70vh;
     }
+    
     .contact-form-container {
         min-height: 70vh;
     }
+    
     .contact-message {
         height: 200px;
     }
 }
-
 @media all and (max-width: 800px) {
     .contact-info {
         min-height: 30vh;
     }
+    
     .contact-form-container {
         min-height: 40vh;
     }
 }
-
 @media all and (max-width: 640px) {
     .contact-info a {
         font-size: 20px;
         min-height: 30vh;
     }
+    
     .contact-info {
         font-size: 20px;
         min-height: 30vh;
     }
+    
     .contact-form-container {
         display: none;
     }
 }
-
 .footer-background {
     position: relative;
     font-family: Modern-M;
     color: white;
     color: aliceblue;
 }
-
 .footer-background img {
     max-width: 100%;
     display: block;
 }
-
 .footer-links {
     position: absolute;
     top: 50%;
@@ -540,17 +566,14 @@ ul {
     left: 0;
     width: 100%;
 }
-
 .footer-links a {
     color: white;
     color: aliceblue;
     text-decoration: none;
 }
-
 .footer-links a:hover {
     text-decoration: none;
 }
-
 .footer-info {
     display: inline-block;
     position: absolute;
@@ -558,86 +581,86 @@ ul {
     height: auto;
     bottom: 0;
 }
-
 .footer-contact {
     width: 51%;
 }
-
 .footer-info p {
     display: inline-block;
     font-size: 18px;
 }
-
 .footer-copyright {
     width: 33%;
 }
-
 .footer-social-col {
     width: 15%;
     padding: 0;
     text-align: right;
 }
-
 .footer-social {
     width: 100%;
     margin-right: auto;
     margin-left: 0;
 }
-
 .footer-social a {
     display: inline-block;
 }
-
 .footer-social img {
     display: inline-block;
     width: 40px;
     height: 40px;
 }
-
 @media all and (max-width: 1150px) {
     .footer-links {
         font-size: 30px;
     }
+    
     .footer-info p {
         font-size: 13px;
     }
 }
-
 @media all and (max-width: 768px) {
     .footer-contact {
         width: 100%;
     }
+    
     .footer-copyright {
         width: 100%;
     }
+    
     .footer-social img {
         width: 30px;
         height: 30px;
     }
+    
     .footer-links {
         visibility: hidden;
     }
+    
     .footer-info {
         text-align: center;
     }
+    
     .footer-social-col {
         margin: 0 auto;
     }
+    
     .footer-info p {
         font-size: 20px;
     }
+    
     .footer-content p {
         display: block;
     }
+    
     .full-numbers {
         display: block;
     }
 }
-
 @media all and (max-width: 685px) {
     .footer-social-col {
         width: 33%;
     }
+    
     .footer-background img {
         max-height: 10%;
         max-width: 250%;
@@ -647,20 +670,23 @@ ul {
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+    
     .footer-info p {
         font-size: 17px;
     }
+    
     .full-numbers {
         display: block;
     }
+    
     .first-number {
         display: block
     }
+    
     .second-number {
         display: block
     }
 }
-
 @media all and (max-width: 320px) {
     .footer-background img {
         max-height: 10%;
