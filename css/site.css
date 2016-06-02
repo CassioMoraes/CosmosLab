@@ -50,10 +50,8 @@ ul {
 }
 
 .center-block {
-    height: auto;
+    text-align: center;
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .circle {
@@ -162,12 +160,24 @@ ul {
     text-align: center;
     padding: 8px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 60px;
     color: rgb(255, 255, 0);
     display: inline-block;
     line-height: normal;
     transition: 0.3s;
     /* Transition effects on hover (color) */
+}
+
+@media(max-width:1440px) {
+    .overlay a {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:500px) {
+    .overlay a {
+        font-size: 30px;
+    }
 }
 
 .overlay a:hover,
@@ -276,10 +286,6 @@ ul {
     }
 }
 
-.about-background {
-    height: 100%;
-}
-
 .about-text {
     text-align: center;
     text-justify: auto;
@@ -357,12 +363,24 @@ ul {
     transform: rotateY(180deg);
 }
 
+.flip-background {
+    background-color: lightgray;
+    background-color: rgba(191, 191, 191, 0.8);
+    padding: 5% 0;
+    color: rgb(49, 9, 49);
+    line-height: 150%;
+}
+
 .about-flip-background {
     background-color: lightgray;
     background-color: rgba(191, 191, 191, 0.8);
     padding: 5% 10%;
     color: rgb(49, 9, 49);
     line-height: 200%;
+}
+
+.products-list {
+    padding: 0;
 }
 
 @media all and (max-width: 1031px) {
@@ -375,6 +393,9 @@ ul {
     .about-flip-background img {
         width: 246px;
     }
+    .flip-background {
+        font-size: 25px;
+    }
 }
 
 @media all and (max-width: 591px) {
@@ -386,6 +407,12 @@ ul {
 @media all and (max-width: 425px) {
     .img-responsive {
         width: 100%;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .flip-background {
+        font-size: 20px;
     }
 }
 
@@ -682,5 +709,11 @@ ul {
     }
     .second-number {
         display: block
+    }
+}
+
+@media all and (max-width: 495px) {
+    .about-background {
+        content: url("../img/about-background-mobile.jpg");
     }
 }
