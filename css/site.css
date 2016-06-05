@@ -23,6 +23,17 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: Modern-M;
+    font-size: 40px;
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 #wait-anim {
     position: fixed;
     width: 100%;
