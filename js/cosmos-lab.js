@@ -6,6 +6,6 @@ window.onload = function() {
     updateImageSize();
 };
 
-window.onresize = function () {
+window.onresize = function() {
     updateImageSize();
 }

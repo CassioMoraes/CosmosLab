@@ -23,6 +23,48 @@ ul {
     list-style-type: none;
 }
 
+#wait-anim {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgb(91, 25, 91);
+    background-color: rgba(91, 25, 91, 0.5);
+    visibility: hidden;
+}
+
+.wait-anim-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wait-anim-background {
+    -webkit-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -ms-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.wait-anim-bottle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .container-table {
     display: table;
 }
