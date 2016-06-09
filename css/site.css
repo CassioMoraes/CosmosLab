@@ -34,7 +34,7 @@ h1 {
     }
 }
 
-#wait-anim {
+.wait-anim {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -62,9 +62,17 @@ h1 {
 @-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
+        -o-animation: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -transform: rotate(0deg);
     }
     to {
         -webkit-transform: rotate(359deg);
+        -o-animation: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -transform: rotate(359deg);
     }
 }
 
@@ -205,10 +213,6 @@ h1 {
     font-family: Modern-M;
     position: relative;
     top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
     padding: 8px;
@@ -250,9 +254,10 @@ h1 {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
 }
@@ -265,9 +270,10 @@ h1 {
         position: absolute;
         top: 50%;
         left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
 }
@@ -305,9 +311,6 @@ h1 {
     opacity: 1;
     background: rgb(91, 25, 91);
     background: rgba(91, 25, 91, 0);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    -o-transition: all .35s;
     transition: all .35s;
 }
 
@@ -346,10 +349,7 @@ h1 {
 
 .flip-container {
     cursor: pointer;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
+    perspective: 1000px;
 }
 
 .flip-container,
@@ -363,10 +363,6 @@ h1 {
 /* flip the pane when hovered */
 
 .flip {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -376,6 +372,7 @@ h1 {
 .flipper {
     transition: 0.6s;
     transform-style: preserve-3d;
+    position: relative;
 }
 
 
@@ -383,9 +380,6 @@ h1 {
 
 .front,
 .back {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -396,12 +390,6 @@ h1 {
 /* front pane, placed above back */
 
 .front {
-    z-index: 2;
-    /* for firefox  */
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
@@ -409,10 +397,6 @@ h1 {
 /* back, initially hidden pane */
 
 .back {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -469,7 +453,7 @@ h1 {
     }
 }
 
-.contact-info {
+.flex-center {
     font-family: Modern-M;
     min-height: 100%;
     /* Fallback for vh unit */
@@ -510,38 +494,6 @@ h1 {
 
 .contact-info a:hover {
     text-decoration: none;
-}
-
-.contact-form-container {
-    font-family: Modern-M;
-    min-height: 100%;
-    /* Fallback for vh unit */
-    min-height: 100vh;
-    /* You might also want to use 'height' property instead.
-
-    /* Make it a flex container */
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    /* Align the bootstrap's container vertically */
-    -ms-box-align: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
-    width: 100%;
-    -ms-box-pack: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    font-size: 30px;
-    text-align: left;
 }
 
 .contact-form input[type="text"] {
@@ -769,4 +721,16 @@ h1 {
     .about-background {
         content: url("../img/about-background-mobile.jpg");
     }
+}
+
+.full-numbers a {
+    color: white;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.full-numbers a:hover {
+    color: white;
+    color: aliceblue;
+    text-decoration: none;
 }

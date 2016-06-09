@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css\site.css">
+    <script type="text/javascript" src="js\prefixfree.min.js"></script>
 </head>
 
 <body>
@@ -77,7 +78,7 @@
         </div>
     </div>
 
-    <div id="wait-anim">
+    <div class="wait-anim">
         <div class="wait-anim-container">
             <img class="wait-anim-background" src="img/wait-background.png" alt="Cosmos Lab - logo animado">
         </div>
@@ -324,7 +325,7 @@
                         <img src="img/contact-background.jpg" class="img-responsive" alt="Cosmos Lab - Contato">
                         <div class="portfolio-box-caption">
                             <div class="col-sm-6">
-                                <div class="contact-info">
+                                <div class="flex-center contact-info">
                                     <ul>
                                         <li><a href="mailto:contato@cosmoslab.com.br">contato@cosmoslab.com.br</a></li>
                                         <li><a href="tel:+555491905340">+55 54 9190-5340</a></li>
@@ -334,7 +335,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="contact-form-container">
+                                <div class="flex-center contact-form-container">
                                     <div class="contact-form">
                                         <div>
                                             <p>Envie sua mensagem</p>
@@ -376,7 +377,8 @@
 
             <div class="footer-info">
                 <div class="footer-contact col-md-6 col-md-push-4">
-                    <p> <span class="full-contact">contato@cosmoslab.com.br <span class="full-numbers"><span class="first-number">+55 54 9190-5340</span><span class="second-number">+55 54 9158-9696</span></span>
+                    <p>
+                        <span class="full-contact">contato@cosmoslab.com.br <span class="full-numbers"><span class="first-number"><a href="tel:+555491905340">+55 54 9190-5340 </a></span><span class="second-number"><a href="tel:+555491589696">+55 54 9158-9696</a></span></span>
                         </span>
                     </p>
                 </div>
