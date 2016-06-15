@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap: http://cosmoslab.com.br/sitemap.xml
+Disallow:/*.json 

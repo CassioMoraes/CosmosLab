@@ -23,13 +23,17 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: Modern-M;
     font-size: 40px;
 }
 
 @media(max-width:500px) {
-    h1 {
+    h1,
+    h2,
+    h3 {
         font-size: 30px;
     }
 }
@@ -609,6 +613,16 @@ h1 {
 }
 
 .footer-links a:hover {
+    text-decoration: none;
+}
+
+.footer-info a {
+    color: white;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
     text-decoration: none;
 }
 
