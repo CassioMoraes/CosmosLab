@@ -428,6 +428,9 @@ h3 {
     .about-flip-background {
         line-height: 100%;
     }
+    .flip-background {
+        line-height: 100%;
+    }
 }
 
 @media all and (max-width: 788px) {
@@ -729,6 +732,10 @@ h3 {
     .second-number {
         display: block
     }
+}
+
+.about-background {
+    z-index: 20;
 }
 
 @media all and (max-width: 495px) {
