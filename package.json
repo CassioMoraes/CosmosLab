@@ -1,0 +1,36 @@
+{
+    "name": "cosmoslab",
+    "version": "1.0.0",
+    "description": "Site da CosmosLab",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CassioMoraes/CosmosLab.git"
+    },
+    "keywords": [
+        "cosmos",
+        "lab",
+        "cosmos",
+        "lab"
+    ],
+    "author": "Cassio Castilhos Moraes",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CassioMoraes/CosmosLab/issues"
+    },
+    "homepage": "https://github.com/CassioMoraes/CosmosLab#readme",
+    "devDependencies": {
+        "del": "^2.2.1",
+        "grunt-processhtml": "^0.4.0",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^2.0.10",
+        "gulp-concat": "^2.6.0",
+        "gulp-html-replace": "^1.6.1",
+        "gulp-imagemin": "^3.0.1",
+        "gulp-uglify": "^1.5.3",
+        "run-sequence": "^1.2.1"
+    }
+}
