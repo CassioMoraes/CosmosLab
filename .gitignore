@@ -1,5 +1,9 @@
 orig
 *.orig
 .vscode
+
+
+#*****Folders********
 node_modules
 dist
+blog

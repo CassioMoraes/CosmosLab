@@ -57,8 +57,9 @@ if (smtpmailer($receiver, $sender, $senderName, $subject, $body)) {
 if (!empty($error)) {
     echo $error;
 }
-?> <?php 
-echo "<form action=\"..\index.html#contact\" method=\"post\">";
-echo "<input type=\"submit\" value=\"Clique para retornar\" >";
-echo "</form>";
+?> 
+<?php 
+    echo "<form action=\"..\index.html#contact\" method=\"post\">";
+    echo "<input type=\"submit\" value=\"Clique para retornar\" >";
+    echo "</form>";
 ?>

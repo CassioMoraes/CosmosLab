@@ -8,8 +8,7 @@
     src: url('myfont-webfont.eot?#iefix') format('embedded-opentype'), url('myfont-webfont.woff') format('woff'), url('myfont-webfont.ttf') format('truetype'), url('myfont-webfont.svg#svgFontName') format('svg');
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     background: url('../img/Home_Background.jpg') no-repeat center center fixed;
@@ -19,21 +18,28 @@ body {
     background-size: cover;
 }
 
+a {
+    font-family: "Modern-M";
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
 ul {
     list-style-type: none;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: Modern-M;
     font-size: 40px;
 }
 
 @media(max-width:500px) {
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
         font-size: 30px;
     }
 }
@@ -241,16 +247,14 @@ h3 {
     }
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
 }
 
 
 /*IE Hack*/
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .home-logo {
         width: 100%;
     }
@@ -326,8 +330,7 @@ h3 {
     transform: translateY(-50%);
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-family: Modern-M;
 }
 
@@ -356,9 +359,7 @@ h3 {
     perspective: 1000px;
 }
 
-.flip-container,
-.front,
-.back {
+.flip-container, .front, .back {
     width: 100%;
     height: 379.40px;
 }
@@ -382,8 +383,7 @@ h3 {
 
 /* hide back of pane during swap */
 
-.front,
-.back {
+.front, .back {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
@@ -466,8 +466,7 @@ h3 {
     /* Fallback for vh unit */
     min-height: 100vh;
     /* You might also want to use 'height' property instead.
-
-    /* Make it a flex container */
+/* Make it a flex container */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -754,4 +753,76 @@ h3 {
     color: white;
     color: aliceblue;
     text-decoration: none;
+}
+
+.gallery {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.list-group {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    background-color: transparent;
+    border: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.thumbnail:hover {
+    text-decoration: none;
+}
+
+.thumbnail img {
+    max-width: 65%;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
+
+.see-more {
+    position: relative;
+}
+
+.text-muted {
+    color: yellow;
+    font-family: Modern-M;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+@media all and (max-width:1199px) {
+    .thumbnail img {
+        max-width: 40%;
+    }
+    .text-muted {
+        font-size: 15px;
+    }
+    .see-more {
+        top: -20px;
+    }
+    .see-more a {
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width:760px) {
+    .thumbnail img {
+        max-width: 35%;
+    }
+}
+
+@media all and (max-width:425px) {
+    .see-more a {
+        font-size: 20px;
+    }
 }
