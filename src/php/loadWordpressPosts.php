@@ -35,7 +35,7 @@
         echo
         '<div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">',
             '<a class="thumbnail fancybox" rel="ligthbox" href="#">',
-                '<img class="img-responsive rounded-img" alt="Em breve!" src="http://pipsum.com/320x320" />',
+                '<img width="345" height="345" alt="Em breve!" src="img/circle-title.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" srcset="img/circle-title.png 345w, img/circle-title.png 150w, img/circle-title.png 300w" sizes="(max-width: 345px) 100vw, 345px">',
                 '<div class="text-center">',
                     '<p class="text-muted">Em breve!</p>',
                 '</div>',
